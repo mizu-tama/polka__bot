@@ -19,7 +19,7 @@ def reply():
 
 @app.route('/echo', methods=['POST'])
 def echo():
-    message = request.json.get("queryResult").get("parameters").get("message")
+    message = request.json.get("queryResult").get("parameters").get("game")
     response = {
         "payload": {
             "google": {
